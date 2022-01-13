@@ -1,0 +1,27 @@
+.header,.add {
+    background-color: #e4ebe5;
+    font-size: 2rem;
+    padding: 0.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: #0d48a6;
+}
+
+.addTeam, .addMember {
+    color: snow;
+    background-color: #9da9bd;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    margin-right: 0.25rem;
+}
+
+.addTeam:hover, .addMember:hover {
+    background-color: snow;
+    color: #9da9bd;
+}
