@@ -1,0 +1,23 @@
+.card {
+    margin: 1rem;
+    padding: 1rem;
+    min-width:5rem;
+    max-width: 10rem;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 3rem;
+}
+
+.employeeCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team {
+    background-color: steelblue;
+    padding: 1rem;
+}
