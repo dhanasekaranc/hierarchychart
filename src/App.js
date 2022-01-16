@@ -1,6 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-import Chart from "./components/Chart"
+import Chart from "./components/Chart";
+import { useEffect, useState, useContext } from "react";
+import { orgData } from "./empData.js";
+import DataProvider from "./components/ContextProvider";
+
+
+let localData = localStorage.getItem("DATA");
+
+if (localData) {
+    localData = JSON.parse(localData);
+}
+else {
+    localStorage.setItem("DATA", JSON.stringify(orgData));
+    localData = JSON.parse(JSON.stringify(orgData));
+}
 
 function App() {
   return (
@@ -19,7 +33,9 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <DataProvider initState={localData}>
       <Chart />
+      </DataProvider>
     </div>
   );
 }
