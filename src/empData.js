@@ -34,7 +34,7 @@ export const orgData = [
         email: "dhanasekaran23298@gmail.com",
         phoneNumber: 123456789,
         id: Math.floor(Math.random() * Math.floor(Math.random() * Date.now())),
-        position: "Head of Engineering",
+        position: "Head of Design",
         parent: "CEO",
         team: "Head",
         children: ["Team5", "Team6"]

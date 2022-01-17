@@ -5,6 +5,10 @@ import { useEffect, useState, useContext } from "react";
 import EditModal from "./EditModal";
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import EditIcon from '@mui/icons-material/Edit';
+//import MoveUpIcon from '@mui/icons-material/MoveUp';
+// import PersonRemoveIcon from '@mui/icons-material/PersonRemove';
+
+
 
 const EmployeeCard = ({ emp }) => {
 
@@ -24,14 +28,16 @@ const EmployeeCard = ({ emp }) => {
         const filter = data.filter(item => item.id !== id);
         //console.log(filter);
         setData(filter);
+        localStorage.setItem("DATA", JSON.stringify(filter));
     }
 
     const handleEdit = (editData) => {
-        console.log(editData);
+        //console.log(editData);
         const filter = data.filter(item => item.id !== editData.id);
         const edit = [...filter, { ...editData }];
         setData(edit);
-        console.log(edit);
+        localStorage.setItem("DATA", JSON.stringify(edit));
+        //console.log(edit);
         setShow(false);
 
     }

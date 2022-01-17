@@ -18,11 +18,11 @@ const EditModal = ({show,empData,handleClose,handleEdit}) => {
     return (
         <>
       <Dialog open={show} onClose={handleClose}>
-        <DialogTitle>Subscribe</DialogTitle>
+        <DialogTitle>Edit Employee Details</DialogTitle>
         <DialogContent>
-          <DialogContentText>
+          {/* <DialogContentText>
             Edit 
-          </DialogContentText>
+          </DialogContentText> */}
           <TextField
             margin="dense"
             id="name"
