@@ -41,14 +41,14 @@ const EmployeeGrid = ({ data, empData }) => {
         <div className="head">
             {data.map(item => {
                 return (
-                    <div>
+                    <div key={item.id}>
                         <div>
                             <EmployeeCard emp={item} key={item.id}/>
                         </div>
                         <div className="teams">
                             {item.children && item.children.map(team => {
                                 return (
-                                    <div>
+                                    <div key={team.id}>
                                         <div className="teamMember">{team}</div>
                                         {empData.filter(mem => (mem.team === team && mem.position === "Team Lead")).map(mem => {
                                             return (

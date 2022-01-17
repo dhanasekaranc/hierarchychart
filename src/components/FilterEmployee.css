@@ -1,0 +1,10 @@
+.filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterby-text,.filter-select,.search {
+    margin: 0.25rem;
+}

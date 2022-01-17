@@ -1,0 +1,17 @@
+.search-data {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+    
+}
+
+.emp-details {
+    min-width: 10rem;
+    background-color: #6ad9ce;
+    border-radius: 1rem;
+    padding:0.5rem;
+    margin: 1rem;
+    text-align: left;
+}

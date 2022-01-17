@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Chart from "./components/Chart";
+import Dashboard from "./components/Dashboard";
 import { useEffect, useState, useContext } from "react";
 import { orgData } from "./empData.js";
 import DataProvider from "./components/ContextProvider";
@@ -34,7 +34,7 @@ function App() {
         </a>
       </header> */}
       <DataProvider initState={localData}>
-      <Chart />
+      <Dashboard />
       </DataProvider>
     </div>
   );

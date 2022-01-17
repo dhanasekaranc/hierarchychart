@@ -1,5 +1,4 @@
-import Header from "./Header";
-import { useEffect, useState, useContext } from "react";
+import { useContext } from "react";
 import EmployeeCard from "./EmployeeCard";
 import EmployeeGrid from "./EmployeeGrid";
 import "./Chart.css";
@@ -36,7 +35,6 @@ const Chart = () => {
     return (
 
         <div>
-            <Header />
             {/* <div>
                     <div className="cards">
                         {data.length && data.map(item => {
