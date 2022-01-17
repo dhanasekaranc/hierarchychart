@@ -27,7 +27,7 @@ export const orgData = [
         position: "Head of Engineering",
         parent: "CEO",
         team: "Head",
-        children: ["Team3", "Team4"]
+        children: ["Team3", "Team4", "Team7"]
     },
     {
         name: "Vadivel",
@@ -98,7 +98,7 @@ export const orgData = [
         email: "dhanasekaran23298@gmail.com",
         phoneNumber: 123456789,
         id: Math.floor(Math.random() * Math.floor(Math.random() * Date.now())),
-        position: "Team Member",
+        position: "Team Lead",
         parent: "Head of Engineering",
         team: "Team3"
     },
@@ -125,7 +125,34 @@ export const orgData = [
         email: "dhanasekaran23298@gmail.com",
         phoneNumber: 123456789,
         id: Math.floor(Math.random() * Math.floor(Math.random() * Date.now())),
+        position: "Team Lead",
+        parent: "Head of Engineering",
+        team: "Team7"
+    },
+    {
+        name: "Logu",
+        email: "dhanasekaran23298@gmail.com",
+        phoneNumber: 123456789,
+        id: Math.floor(Math.random() * Math.floor(Math.random() * Date.now())),
         position: "Team Member",
+        parent: "Head of Engineering",
+        team: "Team7"
+    },
+    {
+        name: "Logu",
+        email: "dhanasekaran23298@gmail.com",
+        phoneNumber: 123456789,
+        id: Math.floor(Math.random() * Math.floor(Math.random() * Date.now())),
+        position: "Team Member",
+        parent: "Head of Engineering",
+        team: "Team7"
+    },
+    {
+        name: "Logu",
+        email: "dhanasekaran23298@gmail.com",
+        phoneNumber: 123456789,
+        id: Math.floor(Math.random() * Math.floor(Math.random() * Date.now())),
+        position: "Team Lead",
         parent: "Head of Engineering",
         team: "Team4"
     },
