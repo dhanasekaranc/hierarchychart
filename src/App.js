@@ -4,6 +4,7 @@ import Dashboard from "./components/Dashboard";
 import { useEffect, useState, useContext } from "react";
 import { orgData } from "./empData.js";
 import DataProvider from "./components/ContextProvider";
+import { Route,Switch } from "react-router-dom";
 
 
 let localData = localStorage.getItem("DATA");
@@ -34,7 +35,9 @@ function App() {
         </a>
       </header> */}
       <DataProvider initState={localData}>
-      <Dashboard />
+        <Switch>
+          <Route exact path="/" component={Dashboard} />
+        </Switch>
       </DataProvider>
     </div>
   );

@@ -173,6 +173,33 @@ export const orgData = [
         position: "Team Member",
         parent: "Head of Engineering",
         team: "Team4"
+    },
+    {
+        name: "Sundar",
+        email: "dhanasekaran23298@gmail.com",
+        phoneNumber: 123456789,
+        id: Math.floor(Math.random() * Math.floor(Math.random() * Date.now())),
+        position: "Team Lead",
+        parent: "Head of Design",
+        team: "Team5"
+    },
+    {
+        name: "Ramesh",
+        email: "dhanasekaran23298@gmail.com",
+        phoneNumber: 123456789,
+        id: Math.floor(Math.random() * Math.floor(Math.random() * Date.now())),
+        position: "Team Member",
+        parent: "Head of Design",
+        team: "Team5"
+    },
+    {
+        name: "Guru",
+        email: "dhanasekaran23298@gmail.com",
+        phoneNumber: 123456789,
+        id: Math.floor(Math.random() * Math.floor(Math.random() * Date.now())),
+        position: "Team Member",
+        parent: "Head of Design",
+        team: "Team5"
     }
     
     
