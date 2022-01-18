@@ -1,5 +1,5 @@
 
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext } from "react";
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Dialog from '@mui/material/Dialog';
@@ -10,7 +10,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import MenuItem from '@mui/material/MenuItem';
 import { DataContext } from "./ContextProvider";
 
-
+//Initial state for new Team Member
 const initState = {
     name: "",
     email: "",

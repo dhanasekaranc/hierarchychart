@@ -1,6 +1,5 @@
 import EmployeeCard from "./EmployeeCard";
 import "./EmployeeGrid.css";
-import { useState } from "react";
 import Team from "./Team";
 import "./Team.css"
 

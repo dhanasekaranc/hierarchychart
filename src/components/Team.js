@@ -14,14 +14,14 @@ const Team = ({ teams, empData }) => {
                         <div className="teamName" onClick={() => setShowTeams(!showTeams)}>{team}</div>
                         {showTeams &&
                             <div>
-                                {empData.filter(mem => (mem.team === team && mem.position === "Team Lead")).
-                                    map(mem =>
+                                {empData.filter(mem => (mem.team === team && mem.position === "Team Lead"))
+                                .map(mem =>
 
                                         <EmployeeCard emp={mem} key={mem.id} />
 
                                     )}
-                                {empData.filter(mem => (mem.team === team && mem.position === "Team Member")).
-                                    map(mem =>
+                                {empData.filter(mem => (mem.team === team && mem.position === "Team Member"))
+                                .map(mem =>
 
                                         <EmployeeCard emp={mem} key={mem.id} />
 

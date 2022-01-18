@@ -4,11 +4,11 @@ import { useState } from "react";
 
 import * as React from 'react';
 import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
+import { TextField } from '@mui/material';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
+// import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
 const EditModal = ({show,empData,handleClose,handleEdit}) => {
@@ -54,7 +54,25 @@ const EditModal = ({show,empData,handleClose,handleEdit}) => {
             variant="standard"
             onChange={(e) => setEditData({...editData, phoneNumber: parseInt(e.target.value)})}
           />
-         
+          {/* <TextField
+                        select
+                        margin="dense"
+                        id="position"
+                        label="Position"
+                        type="text"
+                        fullWidth
+                        value={empData.position}
+                        variant="standard"
+                        onChange={(e) => setEditData({ ...empData, position: e.target.value })}
+                    >
+                        <MenuItem key="lead" value={`Team Lead`}>
+                            {"Team Lead"}
+                        </MenuItem>
+                        <MenuItem key="member" value={`Team Member`}>
+                            {"Team Member"}
+                        </MenuItem>
+                    </TextField>
+          */}
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
