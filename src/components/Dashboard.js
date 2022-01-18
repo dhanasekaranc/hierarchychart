@@ -27,7 +27,7 @@ const Dashboard = () => {
             filterEmployeeData={filterEmployeeData}
             filterData={filterData} 
             setFilterData={setFilterData}/>
-            {searchData.length ? 
+            {filterData.value.length ? 
             <div className="search-data">
                 {searchData.map(item => {
                 return (
@@ -41,7 +41,7 @@ const Dashboard = () => {
                     </div>
                 )
             })}
-            </div>
+            </div> && <div>No Employess Found</div>
             :<Chart />
             }
         </div>
